@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>Neon Milan | Ambient Music & AI Soundtracks | N3ON MILAN</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Neon Milan, N3on, Milan, ambient music, soundtrack, ai, artificial intelligence">
+    <meta name="keywords" content="AI music, AI soundtracks, Ai soundscapes, royalty free, music">
+    <meta name="author" content="fai fx studio">
+    <!-- Favicon -->
+    <link rel="icon" href="./images/neonmilan.webp" type="image/webp">
+    <!-- Open Graph Meta Tags (Facebook, WhatsApp, Signal, WeChat, Telegram) -->
+    <meta property="og:title" content="N3ON MILAN">
+    <meta property="og:description" content="Ambient Music & Soundtracks">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neonmilan.com">
+    <meta property="og:image" content="https://neonmilan.com/images/neonmilan.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- Twitter Card Meta Tags (Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="N3ON MILAN">
+    <meta name="twitter:description" content="Ambient Music & Soundtracks">
+    <meta name="twitter:url" content="https://neonmilan.com">
+    <meta name="twitter:image" content="https://neonmilan.com/images/neonmilan.png">
+    <!-- Stylesheets & Scripts -->
+    <link rel="stylesheet" type="text/css" href="./css/uikit.css" />
+    <link rel="stylesheet" type="text/css" href="./css/custom.css" />
+    <script src="./js/uikit.js"></script>
+    <script src="./js/uikit-icons.js"></script>
+    <style>
+      /* General Resets */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        color: #ffffff;
+        background-color: transparent;
+        overflow: hidden;
+      }
+
+      body {
+        position: relative;
+        overflow-y: auto;
+        /* Allow vertical scrolling for content */
+        overflow-x: hidden;
+        /* Prevent horizontal scrolling */
+      }
+
+      /* Video Background */
+      .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        background-color: black;
+      }
+
+      /* Main Content Container */
+      .uk-container {
+        position: relative;
+        z-index: 1;
+        /* Ensures content appears above the video */
+        padding-bottom: 80px;
+        /* Avoid overlap with sticky elements */
+        min-height: 100vh;
+        /* Ensure content fills the viewport */
+        overflow: hidden;
+        /* Prevent unintended scroll behavior */
+      }
+
+      /* Accordion Styles */
+      .accordion-item {
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        background-color: #000000;
+        /* solid black background */
+        color: #ffffff;
+        /* white text */
+      }
+
+      .accordion-item>a {
+        padding: 12px 20px;
+        overflow: hidden;
+        color: #ffffff !important;
+        /* white accordion titles */
+        background-color: #000000;
+      }
+
+      .uk-accordion-content {
+        padding: 15px;
+        background-color: #000000;
+        /* solid black */
+        border-radius: 8px;
+        overflow: hidden;
+        color: #ffffff;
+        /* white content */
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Neon Milan | N3ON MILAN"
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Video Background -->
+    <video class="video-background" src="./images/video.mp4" autoplay loop muted playsinline></video>
+    <!-- Content Section -->
+    <div class="uk-container">
+      <!-- Header Section -->
+      <header class="uk-text-center uk-padding">
+        <h1 class="uk-hidden">Neon Milan</h1>
+        <div class="uk-text-thin uk-animation-slide-top uk-text-center uk-heading-xlarge uk-heading-2xlarge@m" 
+	style="color: white; text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);">N<span id="animatedText" class="uk-border-rounded">3</span>ON <span>MILAN</span></div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            const element = document.getElementById("animatedText");
+            let colors = ["rgba(255, 204, 0, 0.8)", "rgba(0, 204, 255, 0.8)", "rgba(255, 102, 153, 0.8)"]; // Colors with opacity
+            let currentIndex = 0;
+            // Initial styles for the background
+            element.style.display = "inline-block"; // Ensure the background tightly wraps the text
+            element.style.padding = "2px 5px"; // Minimal padding for a tighter fit
+            element.style.backgroundColor = "rgba(0, 0, 0, 0)"; // Transparent background initially
+            element.style.transition = "background-color 2s"; // Smooth fade effect
+            // Compact height adjustments
+            element.style.lineHeight = "1"; // Reduce vertical spacing to the minimum
+            element.style.margin = "0"; // Ensure no extra margin is added
+            element.style.minHeight = "unset"; // No minimum height
+            function changeBackgroundColor() {
+              // Change background color
+              element.style.backgroundColor = colors[currentIndex];
+              // Update index for the next color
+              currentIndex = (currentIndex + 1) % colors.length;
+            }
+            // Trigger the first fade-in
+            setTimeout(changeBackgroundColor, 0);
+            // Set an interval to animate the background color
+            setInterval(changeBackgroundColor, 3000); // Change color every 3 seconds
+          });
+        </script>
+        <!-- Trigger Button -->
+	<div class="uk-flex uk-flex-center uk-margin">
+  	<a class="uk-button uk-button-primary uk-button-large uk-border-pill uk-text-bold"
+     	href="#soundcloud-modal" uk-toggle>
+    	<span uk-icon="icon: play; ratio: 1.5"></span> Play Sound Reel &nbsp;
+  	</a>
+	</div>
+        <!-- Modal -->
+        <div id="soundcloud-modal" class="uk-modal" uk-modal>
+          <div class="uk-modal-dialog uk-margin-auto-vertical" style="width: 80vw; height: 50vh;">
+            <button class="uk-modal-close-outside" type="button" uk-close></button>
+            <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2005180824&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false" width="100%" height="100%" frameborder="0" allow="autoplay"></iframe>
+          </div>
+        </div>
+        <h2 class="uk-heading-medium uk-text-thin uk-animation-slide-bottom uk-text-center" style="color: white; text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);">Ambient Music & <span class="uk-visible@m">AI</span> Soundtracks</h2>
+      </header>
+      <!-- Accordion -->
+      <section style="opacity: 0.8;">
+        <ul uk-accordion="multiple: false; collapsible: true">
+          <!-- Accordion Item 1 -->
+          <li class="accordion-item uk-card uk-card-default uk-box-shadow-hover-small uk-animation-fade">
+            <a class="uk-accordion-title uk-text-bold uk-text-large" href="#">What is Royalty-Free?</a>
+            <div class="uk-accordion-content uk-text-lighter uk-text-large">
+              <p>In film, gaming, and digital storytelling, sound is not just a background element—it’s a core part of the emotional and sensory experience. Ambient music and cinematic soundscapes build atmosphere, 	      deepen immersion, and help shape the narrative. But finding the right music has often been a complex and costly process, requiring expensive licensing or custom composition.</p>
+              <p>
+                <strong>Royalty-free AI music changes that.</strong>
+                <br>
+                <br> It blends the creative freedom of royalty-free assets with the power of next-gen technology, allowing creators to access <strong>custom, original compositions</strong> without the burden of 		traditional licensing. This music is free from ongoing fees, legal complications, or reuse restrictions—making it ideal for both indie creators and large-scale productions.
+              </p>
+              <p>What sets AI-generated royalty-free music apart is its <strong>ability to adapt</strong>. Unlike static stock libraries, AI compositions can be shaped in real-time to fit specific moods, scenes, or 	      emotional beats. Whether you need a calm ambient bed, a rising tension build, or a loopable background for a game level, AI can generate exactly what you need—when you need it. </p>
+            </div>
+          </li>
+          <!-- Accordion Item 2 -->
+          <li class="accordion-item uk-card uk-card-default uk-box-shadow-hover-small uk-animation-fade">
+            <a class="uk-accordion-title uk-text-bold uk-text-large" href="#">Why use AI Music?</a>
+            <div class="uk-accordion-content uk-text-lighter uk-text-large">
+              <p>AI-generated music isn’t just a trend—it’s a <strong>creative evolution</strong>. </p>
+              <p>Think of it as a new instrument in the artist’s hands. It’s not here to replace human musicians, but to empower creators with speed, flexibility, and originality. It allows for rapid 		      experimentation, seamless integration into creative workflows, and custom results tailored to each project’s unique needs.</p>
+              <ul>
+                <li>
+                  <strong>Tailored Soundscapes</strong>: Generate music that fits the emotional tone and rhythm of your project—down to the second.
+                </li>
+                <li>
+                  <strong>Speed and Flexibility</strong>: No more endless browsing through libraries. Change mood, tempo, or style with a few prompts.
+                </li>
+                <li>
+                  <strong>Uniqueness</strong>: AI compositions are one-of-a-kind, reducing the risk of reusing the same popular royalty-free tracks seen (and heard) elsewhere.
+                </li>
+                <li>
+                  <strong>Scalability</strong>: Perfect for episodic content, games with large worlds, or interactive experiences where variety is essential.
+                </li>
+                <li>
+                  <strong>Budget-Friendly</strong>: Gain access to custom-level sound without the cost of a full composing team or expensive licensing.
+                </li>
+              </ul>
+              <p>In short, AI music helps you move faster, stay creative, and maintain high-quality audio storytelling—at any scale.</p>
+            </div>
+          </li>
+          <!-- Accordion Item 3 -->
+          <li class="accordion-item uk-card uk-card-default uk-box-shadow-hover-small uk-animation-fade">
+            <a class="uk-accordion-title uk-text-bold uk-text-large" href="#">Who is Neon Milan?</a>
+            <div class="uk-accordion-content uk-text-lighter uk-text-large">
+              <p>
+                <strong>N3on Milan</strong> was founded in 2025 by artists and innovators <strong>Sara Ferro</strong> and <strong>Chris Weil</strong>, with one clear mission: <br>
+                <strong>To turn ON the next era of sound.</strong> Or as we like to say— <strong>Turn Ne-On.</strong>
+              </p>
+              <p>At Neon Milan, we combine artistic sensitivity with cutting-edge AI tools to craft <strong>authentic, tailor-made ambient music and cinematic soundtracks</strong> for modern storytellers. Whether 	      you’re working on a film, game, immersive experience, or digital art, our goal is to provide music that feels like it was made just for you—because it was. </p>
+              <p>We don’t believe in cookie-cutter audio. We believe in <strong>sound that moves with your story</strong>. Our approach is rooted in a love for mood, texture, and emotional resonance—brought to life 	      through technology. </p>
+              <p>
+                <strong>Why work with us?</strong>
+              </p>
+              <ul>
+                <li>
+                  <strong>Custom-first mindset</strong>: Every piece is generated for a purpose. Your purpose.
+                </li>
+                <li>
+                  <strong>Unique aesthetic</strong>: Our sound is curated, textured, and emotional—not generic.
+                </li>
+                <li>
+                  <strong>Scalable solutions</strong>: From indie passion projects to high-end commercial productions, we deliver at any scope.
+                </li>
+                <li>
+                  <strong>Human-led, tech-powered</strong>: We're artists first, and AI is our co-creator—not our replacement.
+                </li>
+                <li>
+                  <strong>Creative collaboration</strong>: We love working closely with visionary directors, developers, and creatives who care about detail and impact.
+                </li>
+              </ul>
+              <p>We believe that music should be <strong>as alive and evolving as the stories it supports</strong>. Neon Milan isn’t just a service—it’s a sound philosophy. A revolution through evolution. </p>
+              <p>So if you're ready to <strong>light up your world</strong>, <strong>Turn Ne-On</strong>—and let’s create something unforgettable. </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+<!-- Contact -->
+
+      <div class="uk-flex uk-flex-center uk-padding">
+      <a href="#contact" uk-toggle class="uk-button uk-button-primary uk-button-large uk-border-rounded uk-box-shadow-medium uk-animation-scale-up">
+      <span uk-icon="icon: mail; ratio: 1.5"></span>&nbsp; Get in Touch &nbsp;
+      </a>
+
+<div id="contact" uk-modal uk-border-rounded>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-border-rounded">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title uk-text-lighter">Contact us</h2>
+        </div>
+
+        <div class="uk-modal-body" uk-overflow-auto>
+		
+<form name="Contact - Neon Milan" accept-charset="utf-8" action="https://formspree.io/f/xbjvweqp" method="post">
+  <fieldset class="uk-fieldset">
+    <div class="uk-margin">
+    <input class="uk-input uk-border-rounded uk-text-lighter" type="text" name="Name" id="full-name" placeholder="Name" required="">
+    </div>
+    <div class="uk-margin">
+    <input class="uk-input uk-border-rounded uk-text-lighter" type="email" name="Reply to" id="email-address" placeholder="Email Address" required="">
+    </div>
+    <div class="uk-margin">
+    <input class="uk-input uk-border-rounded uk-text-lighter" type="text" inputmode="numeric" pattern="[0-9]*" name="Telephone" id="telephone" placeholder="Phone">
+    </div>
+    <div class="uk-margin">
+    <textarea class="uk-textarea uk-border-rounded uk-text-lighter" rows="5" rows="6" name="Message" id="message" placeholder="Message" required=""></textarea>
+    </div>
+  </fieldset>
+    <div class="uk-modal-footer uk-text-right">
+    <input class="uk-button uk-button-primary uk-border-pill" type="submit"></input>
+    </div>
+</form>
+		
+	  </div>	
+    </div>
+</div>
+
+<!-- Contact End -->
+
+      </div>
+    </div>
+  </body>
+</html>
